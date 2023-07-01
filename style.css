@@ -1,0 +1,64 @@
+
+html{
+    background-color:#C5DFF8 ;
+}
+
+#flex1{
+    background-color: rgb(251, 252, 252);
+    height: 800px;
+    width: 1000px;
+    margin: 200px;
+    padding: 30px;
+    border: 10px solid black;
+}
+
+#flex2{
+    background-color: rgb(251, 252, 252);
+    height: 200px;
+    width: 1000px;
+    margin-left: 100px;
+   
+    border: 10px solid black;
+}
+
+#result
+{
+color: black;
+font-weight: bold;
+font-size: 50px;
+margin-left: 15%;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(188, 11, 14);
+}
+
+label {
+    color: rgb(0, 0, 1);
+    font-weight: bold;
+    font-size: 20px;
+    width: 300px;
+    display: inline-block;
+}
+form{
+    padding-left:20%;
+}
+input {
+    width: 500px;
+    height: 30px;
+    border-width: 3px;
+    border-color: rgb(0, 0, 0);
+    font-size: 15px;
+    padding-left: 5px;
+}
+
+select {
+    width: 513px;
+    height: 40px;
+    border-width: 3px;
+    border-color: rgb(2, 0, 4);
+    font-size: 15px;
+    padding-left: 5px;
+}
+

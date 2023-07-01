@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='/style.css') }}">
+    </head>
+    <body>
+
+        <h1> THYROID CLASSIFICATION </h1><br>
+        <form action="/predict" method="post">
+            </select><br><br>
+            <label for="goitre">Do you have Goitre?</label>
+            <select name="goitre">
+            <option value="goitre_t">Yes</option>
+            <option value="goitre_f" selected>No</option>
+            </select><br><br>
+            <label for="tumor">Do you have Tumor?</label>
+            <select name="tumor">
+            <option value="tumor_t">Yes</option>
+            <option value="tumor_f" selected>No</option>
+            </select><br><br>
+            <label for="sex">Sex</label>
+            <select name="sex">
+            <option value="sex_M" selected>Male</option>
+            <option value="sex_F">Female</option>
+            </select><br><br>
+            <label for="sick">Are you feeling Sick?</label>
+            <select name="sick">
+            <option value="sick_t">Yes</option>
+            <option value="sick_f" selected>No</option>
+            </select><br><br>
+            <label for="pregnant">Are you Pregnant?</label>
+            <select name="pregnant">
+            <option value="pregnant_t">Yes</option>
+            <option value="pregnant_f" selected>No</option>
+            </select><br><br>
+            <label for="thyroid_surgery">Have you undergone Thyroid Surgery?</label>
+            <select name="thyroid_surgery">
+            <option value="thyroid_surgery_t">Yes</option>
+            <option value="thyroid_surgery_f" selected>No</option>
+            </select><br><br>
+            <label>Thyroid Stimulating Hormone - TSH value (nanomoles per liter (nmol/L)):</label>
+            <input type="text" name="TSH"/><br><br>
+            <label>Triiodothyronine - T3 value (nanomoles per liter (nmol/L)):</label>
+            <input type="text" name="T3"/><br><br>
+            <label>Total Thyroxine - TT4 value (nanomoles per liter (nmol/L)):</label>
+            <input type="text" name="TT4"/><br><br>
+            <label>T4 uptake - T4U value (nanomoles per liter (nmol/L)):</label>
+            <input type="text" name="T4U"/><br><br>
+            <label>Free Thyroxine Index - FTI ratio:</label>
+            <input type="text" name="FTI"/><br><br>
+            <p><input type="submit" value="Submit" style="height: 50px; color: white; background-color: rgb(181, 11, 96); font-size: 20px; font-weight: bold; margin-left: 200px; margin-right: 200px;"/></p><br><br>
+        </form>
+
+        <div id="flex2">
+            <h1> THYROID CLASSIFICATION RESULT </h1><br>
+            <b id="result"> {{y}} </b> 
+        </div>
+    </body>
+</html>
